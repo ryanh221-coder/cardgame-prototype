@@ -12,7 +12,35 @@ This first slice already includes:
 - win and loss states
 - restart support
 
-## Run it on Windows
+## Download a Windows EXE
+
+The repo now includes a GitHub Actions workflow that builds a Windows executable.
+
+### How to get the EXE
+
+1. Open the repository on GitHub
+2. Click **Actions**
+3. Open the latest **Build Windows EXE** run
+4. In the **Artifacts** section, download **CardGamePrototype-windows-exe**
+5. Unzip it and run `CardGamePrototype.exe`
+
+If the workflow has not run yet, push any small commit to `main` or manually trigger the workflow from the **Actions** tab.
+
+## Build the EXE locally on Windows
+
+You can also build it yourself:
+
+```bat
+build_windows.bat
+```
+
+That should place the executable here:
+
+```text
+dist\CardGamePrototype.exe
+```
+
+## Run it from source on Windows
 
 1. Install Python 3.11 or newer
 2. Open a terminal in the repo folder
